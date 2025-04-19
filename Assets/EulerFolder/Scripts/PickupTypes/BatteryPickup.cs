@@ -5,7 +5,7 @@ public class BatteryPickup : PickupBase {
         EnergyTracker energyTracker = GameObject.FindObjectOfType<EnergyTracker>();
         if (energyTracker != null) {
             energyTracker.AddEnergy();
-            Debug.Log("Se añade {energyAmount} de enegia XD");
+            Debug.Log("Se añade de enegia XD");
         } else {
             Debug.Log("No hay energy");
         }

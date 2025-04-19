@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1538882778, guid: ad905cbfec56334418ac3283e7496969, type: 3}
+  m_Sprite: {fileID: 1548056909, guid: ad905cbfec56334418ac3283e7496969, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,3 +100,4 @@ MonoBehaviour:
   doorId: 0
   startsLocked: 1
   isLocked: 0
+  spriteOpen: {fileID: 168764795, guid: ad905cbfec56334418ac3283e7496969, type: 3}

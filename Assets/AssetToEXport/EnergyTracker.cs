@@ -59,26 +59,11 @@ public class EnergyTracker : MonoBehaviour
         //animation to turn off
     }
 
-<<<<<<< HEAD
     public void AddEnergy() {
         if (energyLevel == maxLevel) {
-=======
-    public void AddEnergy()
-    {
-        if(energyLevel>=energyBars.Count)
-        {
->>>>>>> 701c81e207bea90a7044cad4b2f4f37773caca01
             return;
         }
-        energyLevel++;
         energyBars[energyLevel].SetActive(true);
-<<<<<<< HEAD
+        energyLevel++;
     }
-
-=======
-        
-        
-        //animation to turn on
-    }
->>>>>>> 701c81e207bea90a7044cad4b2f4f37773caca01
 }
