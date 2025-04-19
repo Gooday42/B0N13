@@ -36,7 +36,7 @@ public class EnergyTracker : MonoBehaviour
 
     void TurnOff()
     {
-        gameObject.GetComponent<Movement>().enabled = false;
+        gameObject.GetComponent<PlayerMovement>().enabled = false;
         gameObject.GetComponent<SpriteRenderer>().color = Color.black;
         foreach(GameObject map in TurnThisOnWhenOff)
         {
