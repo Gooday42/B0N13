@@ -10,9 +10,11 @@ public class EnergyTracker : MonoBehaviour
     public List<GameObject> TurnThisOnWhenOff = new List<GameObject>();
 
     public int energyLevel = 1;
+    private int maxLevel;
 
     void Start()
     {
+        maxLevel = energyLevel;
         for(int i = 0; i < energyLevel; i++)
         {
             GameObject intance = Instantiate(energyBar, energyBarContainer.transform);
@@ -56,4 +58,13 @@ public class EnergyTracker : MonoBehaviour
         
         //animation to turn off
     }
+
+    public void AddEnergy() {
+        if (energyLevel == maxLevel) {
+            return;
+        }
+        energyLevel++;
+        energyBars[energyLevel].SetActive(true);
+    }
+
 }
