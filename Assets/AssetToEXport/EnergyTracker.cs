@@ -56,4 +56,17 @@ public class EnergyTracker : MonoBehaviour
         
         //animation to turn off
     }
+
+    public void AddEnergy()
+    {
+        if(energyLevel>=energyBars.Count)
+        {
+            return;
+        }
+        energyLevel++;
+        energyBars[energyLevel].SetActive(true);
+        
+        
+        //animation to turn on
+    }
 }
