@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.TileMaps;
 public class SwitchMap : MonoBehaviour
 {
     public GameObject[] maps;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        StartCoroutine(Interpolator());
     }
 
     // Update is called once per frame
@@ -18,14 +18,26 @@ public class SwitchMap : MonoBehaviour
         {   
             if( GetComponent<EnergyTracker>().energyLevel > 0)
             {
-                foreach (GameObject map in maps)
-                {
-                    map.SetActive(!map.activeSelf);
-                }            
+                          
                 GetComponent<EnergyTracker>().consumeEnergy();
 
             }
            
         }
+    }
+    public void ChangeWorld(){
+        foreach (GameObject map in maps)
+        {
+            map.SetActive(!map.activeSelf);
+            map.GetComponent<TilemapCollider2D>().enabled = !map.GetComponent<TilemapCollider2D>().enabled;
+        }  
+
+    }
+
+    private IEnumerator Interpolator()
+    {
+        yield return new WaitForSeconds(1.2f);
+        ChangeWorld();
+        StartCoroutine(Interpolator());
     }
 }
