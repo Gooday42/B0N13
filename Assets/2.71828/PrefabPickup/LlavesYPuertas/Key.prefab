@@ -134,7 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  environmentId: 0
   rotationSpeed: 50
   floatSpeed: 1
   floatAmplitude: 0.2
