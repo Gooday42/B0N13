@@ -27,6 +27,9 @@ public class MapPreview : MonoBehaviour
             if (map != null)
             {
                 GameObject instantiatedMap = Instantiate(map, transform); // Set parent to preserve hierarchy
+                //En caso de usar shaders se debe cambiar el material de la instancia
+                //Pd: Euler alejate de mi paloma xd
+
                 instantiatedMap.transform.position = Vector3.zero;   // Prevent compression issue
                 instantiatedMap.SetActive(false);
                 maps.Add(instantiatedMap);
