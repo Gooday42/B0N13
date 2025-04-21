@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
 	private Vector2 _lastDashDir;
 	private bool _isDashAttacking;
 
+	private Animator _animator;
+
 	#endregion
 
 	#region INPUT PARAMETERS
@@ -66,6 +68,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
+		_animator = GetComponent<Animator>();
+
 	}
 
 	private void Start()
@@ -92,11 +96,17 @@ public class PlayerMovement : MonoBehaviour
 
 		if (_moveInput.x != 0)
 			CheckDirectionToFace(_moveInput.x > 0);
+		else
+			_animator.SetBool("Running",false);
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
 			OnJumpInput();
-        }
+        }else
+		{
+			_animator.SetBool("Jumping",false);
+
+		}
 
 		if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
 		{
@@ -260,6 +270,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnJumpInput()
 	{
 		LastPressedJumpTime = Data.jumpInputBufferTime;
+		_animator.SetBool("Jumping",true);
 	}
 
 	public void OnJumpUpInput()
@@ -358,6 +369,9 @@ public class PlayerMovement : MonoBehaviour
 		transform.localScale = scale;
 
 		IsFacingRight = !IsFacingRight;
+
+		Debug.Log("mama me estoy moviendo");
+		GetComponent<Animator>().SetBool("Running",true);
 	}
     #endregion
 
@@ -486,6 +500,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (isMovingRight != IsFacingRight)
 			Turn();
+	
 	}
 
     private bool CanJump()

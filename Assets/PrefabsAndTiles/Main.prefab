@@ -173,7 +173,7 @@ MonoBehaviour:
   energyBars: []
   TurnThisOnWhenOff:
   - {fileID: 3955517593523851103}
-  energyLevel: 3
+  energyLevel: 8
 --- !u!114 &2141407165778067225
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -31,6 +31,10 @@ public class MapPreview : MonoBehaviour
                 //Pd: Euler alejate de mi paloma xd
 
                 instantiatedMap.transform.position = Vector3.zero;   // Prevent compression issue
+                TilemapRenderer render = instantiatedMap.GetComponent<TilemapRenderer>();
+                Color oGcolor = render.material.color;
+                oGcolor.a = 0.5f;
+                render.material.color = oGcolor;
                 instantiatedMap.SetActive(false);
                 maps.Add(instantiatedMap);
             }
