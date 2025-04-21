@@ -3609,5 +3609,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchInterval: 2
   fadeDuration: 1
-  chaosFactor: 0.5
-  peakTransparency: 0.5
+  chaosFactor: 0
+  peakTransparency: 0.3
