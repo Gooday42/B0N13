@@ -5,14 +5,14 @@ public class DoorColliderManager : MonoBehaviour {
     public bool debugMode = false;
 
     private Door door;
-    private Collider doorCollider;
+    private Collider2D doorCollider;
 
     private void Awake() {
         door = GetComponent<Door>();
-        doorCollider = GetComponent<Collider>();
+        doorCollider = GetComponent<Collider2D>();
 
         if (doorCollider == null && debugMode) {
-            Debug.LogError("No se encontró un componente Collider en el objeto.");
+            Debug.LogError("No se encontrï¿½ un componente Collider en el objeto.");
         }
     }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6333923165806061233}
   - component: {fileID: 2416292847640865615}
   - component: {fileID: 3876118229546890302}
-  - component: {fileID: 1386670341954226494}
+  - component: {fileID: -1112164952048982488}
   m_Layer: 0
   m_Name: BlueD
   m_TagString: Untagged
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1548056909, guid: ad905cbfec56334418ac3283e7496969, type: 3}
   m_Color: {r: 0.2781061, g: 0.42631543, b: 0.6792453, a: 1}
   m_FlipX: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
@@ -148,7 +148,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &1386670341954226494
+--- !u!114 &-1112164952048982488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,9 +157,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5281803563339788386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b2221052a5adb4e8776d6d6b4993b7, type: 3}
+  m_Script: {fileID: 11500000, guid: b50aaebe9082f1a49a3e70041552ccf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 1
-  delayBeforeLoad: 0.5
-  triggeringTag: Player
+  makeTriggerWhenUnlocked: 1
+  debugMode: 0
