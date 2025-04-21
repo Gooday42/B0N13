@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6333923165806061233}
   - component: {fileID: 2416292847640865615}
   - component: {fileID: 3876118229546890302}
-  - component: {fileID: 1386670341954226494}
+  - component: {fileID: 6029180203325750349}
   m_Layer: 0
-  m_Name: Door
+  m_Name: RedD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1548056909, guid: ad905cbfec56334418ac3283e7496969, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.20098485, b: 0.17647058, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017dd4bae25fcfd43aba41c90b8ae77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 0
+  doorId: 3
   startsLocked: 1
   isLocked: 0
   spriteOpen: {fileID: 168764795, guid: ad905cbfec56334418ac3283e7496969, type: 3}
@@ -148,7 +148,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &1386670341954226494
+--- !u!114 &6029180203325750349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,9 +157,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5281803563339788386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b2221052a5adb4e8776d6d6b4993b7, type: 3}
+  m_Script: {fileID: 11500000, guid: b50aaebe9082f1a49a3e70041552ccf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 1
-  delayBeforeLoad: 0.5
-  triggeringTag: Player
+  makeTriggerWhenUnlocked: 1
+  debugMode: 0

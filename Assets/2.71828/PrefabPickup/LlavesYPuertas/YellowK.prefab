@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3119195283610901560}
   - component: {fileID: -42926132491259693}
   m_Layer: 0
-  m_Name: Key
+  m_Name: YellowK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1788000486, guid: 89b03b32c6fe2fa40b1ef24c1d6fed3f, type: 3}
-  m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
+  m_Color: {r: 0.6037736, g: 0.5881409, b: 0.030758228, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -135,8 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 1
   rotationSpeed: 50
-  floatSpeed: 1
+  floatSpeed: 2
   floatAmplitude: 0.2
   wasCollected: 0
-  keyId: 0
+  keyId: 2
   targetDoor: {fileID: 0}

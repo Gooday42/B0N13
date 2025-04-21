@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3876118229546890302}
   - component: {fileID: 1386670341954226494}
   m_Layer: 0
-  m_Name: Door
+  m_Name: BlueD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1548056909, guid: ad905cbfec56334418ac3283e7496969, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2781061, g: 0.42631543, b: 0.6792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017dd4bae25fcfd43aba41c90b8ae77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 0
+  doorId: 1
   startsLocked: 1
   isLocked: 0
   spriteOpen: {fileID: 168764795, guid: ad905cbfec56334418ac3283e7496969, type: 3}
